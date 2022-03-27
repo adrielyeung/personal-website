@@ -1,6 +1,8 @@
 # personal-website
 My personal website where I showcase my journey on tech, music, travel, and more!
 
+This is a simple build with open source code allowing for a preview of the actual site. Please use the redirect links in the [preview site](http://new.adrieltheexplorer.com/) to visit the actual site (work in progress!).
+
 # React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
