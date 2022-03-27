@@ -9,6 +9,7 @@ function Header() {
         <h1>Hello! I am Adriel, exploring tech, music, travel and more!</h1>
         <p>Follow my journey below!</p>
         <div className="header-btns">
+            {/*
             <Button
                 className="btns"
                 buttonStyle="btn--outline"
@@ -16,11 +17,12 @@ function Header() {
                 href="/"
                 text="Contact me"
             />
+            */}
             <Button
                 className="btns"
                 buttonStyle="btn--primary"
                 buttonSize="btn--large"
-                href="/"
+                href="/external/adrieltheexplorer"
                 text="Explore"
             />
         </div>

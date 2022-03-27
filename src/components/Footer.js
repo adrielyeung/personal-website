@@ -6,32 +6,6 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className="footer-container">
-        <section className="footer-subscription">
-            <p className="footer-subscription-heading">
-                Follow me on the below social media!
-            </p>
-            <p className='footer-subscription-text'>
-                You can unfollow at any time.
-                </p>
-            <div className="input-areas">
-                <form>
-                    <input type="email" name="email" placeholder="Your email"
-                    className="footer-input" />
-                    <Button buttonStyle="btn--outline" href="/" text="Subscribe!" />
-                </form>
-            </div>
-        </section>
-        <div className="footer-links">
-            <div className="footer-link-wrapper">
-                <div className="footer-link-items">
-                    <h2>Social Media</h2>
-                    <Link to='/'>Instagram</Link>
-                    <Link to='/'>Facebook</Link>
-                    <Link to='/'>Youtube</Link>
-                    <Link to='/'>Twitter</Link>
-                </div>
-            </div>
-        </div>
         <section className="social-media">
             <div className="social-media-wrap">
                 <div className="social-icons">

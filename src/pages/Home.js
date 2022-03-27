@@ -6,7 +6,9 @@ function Home() {
     return (
         <>
             <Header />
+            {/* 
             <Cards />
+            */}
         </>
     );
 }

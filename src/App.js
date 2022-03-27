@@ -2,9 +2,6 @@ import React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import Redirection from './utils/Redirection';
-import Travel from './pages/Travel';
-import Tech from './pages/Tech';
-import Music from './pages/Music';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -17,9 +14,15 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" exact element={<Home />} />
+            {/*
             <Route path="/travel" exact element={<Travel />} />
             <Route path="/tech" exact element={<Tech />} />
             <Route path="/music" exact element={<Music />} />
+            */}
+
+            <Route path="/external/adrieltheexplorer" exact
+              element = {<Redirection
+                href="https://adrieltheexplorer.com/" />} />
 
             <Route path="/external/instagram" exact 
               element={<Redirection
