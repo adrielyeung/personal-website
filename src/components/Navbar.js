@@ -66,9 +66,7 @@ function Navbar() {
                 )}
               */}
               </ul>
-              {/*
               {button && <Button buttonStyle="btn--outline" href="/contact" text="Contact me" />}
-            */}
               
           </div>
       </nav>
