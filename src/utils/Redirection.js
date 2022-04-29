@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Redirection(props) {
-  window.location = props.href;
+  window.location.assign(props.href);
   return (
     <section>Redirecting to {props.href}, one moment...</section>
   );

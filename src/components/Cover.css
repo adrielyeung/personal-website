@@ -1,0 +1,48 @@
+ .cover-container {
+  background: url("/images/cover.jpg") center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.cover-container > h1 {
+  color: #fff;
+  font-size: 50px;
+  margin-top: -190px;
+  z-index: 1;
+  text-align: center;
+}
+
+.cover-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  z-index: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .cover-container > h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover-container {
+    background: url("/images/cover.jpg") center center/cover no-repeat;
+  }
+
+  .cover-container > h1 {
+    font-size: 30px;
+  }
+
+  .cover-container > p {
+    font-size: 20px;
+  }
+}

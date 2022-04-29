@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function CardItem(props) {
   return (
@@ -9,7 +9,7 @@ function CardItem(props) {
                 <figure className="cards__item__pic-wrap" data-category={props.label}>
                     <img
                         src={props.src}
-                        alt="Travel" 
+                        alt={props.label}
                         className="cards__item__img"
                     />
                 </figure>

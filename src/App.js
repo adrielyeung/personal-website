@@ -1,10 +1,10 @@
-import React from 'react';
-import './App.css';
-import Home from './pages/Home';
-import Redirection from './utils/Redirection';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import "./App.css";
+import Home from "./pages/Home";
+import Redirection from "./utils/Redirection";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,13 +14,21 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" exact element={<Home />} />
-            {/*
-            <Route path="/travel" exact element={<Travel />} />
-            <Route path="/tech" exact element={<Tech />} />
-            <Route path="/music" exact element={<Music />} />
-            */}
+            
+            <Route path="/about" exact element={<Redirection
+                href="https://adrieltheexplorer.com/about" />} />
+            <Route path="/travel" exact element={<Redirection
+                href="https://adrieltheexplorer.com/travel" />} />
+            <Route path="/tech" exact element={<Redirection
+                href="https://adrieltheexplorer.com/tech" />} />
+            <Route path="/music" exact element={<Redirection
+                href="https://adrieltheexplorer.com/music" />} />
+            <Route path="/contact" exact element={<Redirection
+                href="https://adrieltheexplorer.com/contact" />} />
+            <Route path="*" element={<Redirection
+                  href="https://adrieltheexplorer.com/error" />} />
 
-            <Route path="/external/adrieltheexplorer" exact
+            <Route path="/home" exact
               element = {<Redirection
                 href="https://adrieltheexplorer.com/" />} />
 
